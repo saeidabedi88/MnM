@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Assistant - Color Palette</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .color-card {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .color-sample {
+            height: 120px;
+        }
+        
+        .color-info {
+            padding: 15px;
+            background: white;
+        }
+        
+        .color-name {
+            font-weight: bold;
+            margin: 0 0 5px 0;
+        }
+        
+        .color-value {
+            font-family: monospace;
+            margin: 0 0 5px 0;
+        }
+        
+        .color-usage {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+        
+        .example-section {
+            margin-top: 40px;
+        }
+        
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .example-card {
+            padding: 20px;
+            border-radius: 6px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Project Assistant Color Palette</h1>
+        
+        <h2>Primary Colors</h2>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-sample" style="background-color: #272727;"></div>
+                <div class="color-info">
+                    <p class="color-name">Raisin Black</p>
+                    <p class="color-value">#272727</p>
+                    <p class="color-value">rgb(39,39,39)</p>
+                    <p class="color-usage">Main backgrounds, primary content areas</p>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-sample" style="background-color: #7B7C7B;"></div>
+                <div class="color-info">
+                    <p class="color-name">Gray</p>
+                    <p class="color-value">#7B7C7B</p>
+                    <p class="color-value">rgb(123,124,123)</p>
+                    <p class="color-usage">Secondary elements, message bubbles, cards</p>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-sample" style="background-color: #4B4B4B;"></div>
+                <div class="color-info">
+                    <p class="color-name">Davys Gray</p>
+                    <p class="color-value">#4B4B4B</p>
+                    <p class="color-value">rgb(75,75,75)</p>
+                    <p class="color-usage">Interactive elements, form controls</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Extended Shades</h2>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-sample" style="background-color: #1D1D1D;"></div>
+                <div class="color-info">
+                    <p class="color-name">Darker Black</p>
+                    <p class="color-value">#1D1D1D</p>
+                    <p class="color-value">rgb(29,29,29)</p>
+                    <p class="color-usage">Headers, footers, hover states for dark elements</p>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-sample" style="background-color: #5B5C5B;"></div>
+                <div class="color-info">
+                    <p class="color-name">Middle Gray</p>
+                    <p class="color-value">#5B5C5B</p>
+                    <p class="color-value">rgb(91,92,91)</p>
+                    <p class="color-usage">Hover states for medium elements</p>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-sample" style="background-color: white;"></div>
+                <div class="color-info">
+                    <p class="color-name">White</p>
+                    <p class="color-value">#FFFFFF</p>
+                    <p class="color-value">rgb(255,255,255)</p>
+                    <p class="color-usage">Text color on dark backgrounds</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <h2>Component Examples</h2>
+            
+            <h3>Buttons</h3>
+            <div class="example-grid">
+                <div class="example-card" style="background-color: #272727;">
+                    Primary Button
+                </div>
+                <div class="example-card" style="background-color: #1D1D1D;">
+                    Primary Button (Hover)
+                </div>
+                <div class="example-card" style="background-color: #7B7C7B;">
+                    Secondary Button
+                </div>
+                <div class="example-card" style="background-color: #5B5C5B;">
+                    Secondary Button (Hover)
+                </div>
+            </div>
+            
+            <h3>Form Elements</h3>
+            <div class="example-grid">
+                <div class="example-card" style="background-color: #4B4B4B; border: 1px solid #7B7C7B;">
+                    Input Field
+                </div>
+                <div class="example-card" style="background-color: #4B4B4B; border: 1px solid #7B7C7B; outline: 2px solid #1D1D1D;">
+                    Input Field (Focus)
+                </div>
+            </div>
+            
+            <h3>Cards</h3>
+            <div class="example-grid">
+                <div class="example-card" style="background-color: #7B7C7B;">
+                    Regular Card
+                </div>
+                <div class="example-card" style="background-color: #272727; border: 1px solid #7B7C7B;">
+                    Selected Card
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
